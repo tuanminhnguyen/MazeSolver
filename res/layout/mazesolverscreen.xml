@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MazeSolverScreen" >
+
+    <Button
+        android:id="@+id/drawWalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="Draw" />
+
+    <Button
+        android:id="@+id/eraseWalls"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/drawWalls"
+        android:layout_toRightOf="@+id/drawWalls"
+        android:text="Erase" />
+
+    <Button
+        android:id="@+id/setStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/eraseWalls"
+        android:layout_toRightOf="@+id/eraseWalls"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/setGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setStart"
+        android:layout_alignBottom="@+id/setStart"
+        android:layout_toRightOf="@+id/setStart"
+        android:text="Goal" />
+
+    <Button
+        android:id="@+id/solve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setGoal"
+        android:layout_alignBottom="@+id/setGoal"
+        android:layout_alignParentRight="true"
+        android:text="Solve" />
+   
+    <sofia.graphics.ShapeView
+        android:id="@+id/shapeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setStart" />
+
+    <TextView
+        android:id="@+id/infoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="32dp"
+        android:text="" />
+
+</RelativeLayout>
